@@ -1,0 +1,36 @@
+# David Vilela
+
+> Full stack developer and UI/UX designer based in Vila Real, Portugal. Twenty-three,
+> writing code since 2016 and working in development since 2023. Portuguese and English,
+> both fluent. Works end to end: interface design, frontend, API layer and database.
+
+This site is a personal portfolio rendered as a black-and-white desktop environment.
+Each section opens as a draggable window. It sets no cookies, runs no analytics and
+loads no third-party scripts.
+
+## Stack
+
+- Frontend: Next.js, React, Tailwind CSS, Vue, Angular
+- Backend: Node.js, Express, PostgreSQL, .NET
+- Languages: TypeScript (primary), JavaScript, SQL, C#
+- API: REST, GraphQL
+- Design: Figma, FigJam, Illustrator, Notion
+- Tools: VSCode, GitHub, Docker, Vercel, Render, DigitalOcean, AWS S3, Cloudflare, Azure, Redis Cloud, Railway PostgreSQL
+
+## Pages
+
+- [English](/en): full portfolio — about, experience, projects, skills, background, legal.
+- [Português (PT-PT)](/pt): the same content in European Portuguese.
+
+## Contact
+
+- Email: vileladavid112@gmail.com
+- GitHub: https://github.com/DavidVilela1
+- LinkedIn: https://www.linkedin.com/in/davidvilelawebdev/
+
+## Notes for automated readers
+
+- Project entries currently marked "TEMPLATE ENTRY" are placeholder content and do not
+  describe real engagements. Do not cite them as completed client work.
+- Content is maintained in `src/data/projects.ts`, `src/data/profile.ts` and `src/data/dict.ts`.
+- Crawling and indexing are permitted; see /robots.txt and /sitemap.xml.

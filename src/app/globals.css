@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    --hair: rgba(255, 255, 255, 0.18);
+    --hair-strong: rgba(255, 255, 255, 0.4);
+  }
+
+  html,
+  body {
+    height: 100%;
+    background: #000;
+    color: #fff;
+  }
+
+  /* The page itself never scrolls; windows scroll internally. */
+  body {
+    overflow: hidden;
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Mobile is allowed to scroll, as agreed. */
+  @media (max-width: 767px) {
+    body {
+      overflow-y: auto;
+    }
+  }
+
+  ::selection {
+    background: #fff;
+    color: #000;
+  }
+
+  :focus-visible {
+    outline: 1px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* Hairline border used for every window, panel and divider. */
+  .hair {
+    border: 1px solid var(--hair);
+  }
+
+  /* Soft phosphor bloom on text. Cheap: one shadow, no filter. */
+  .glow {
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.25);
+  }
+
+  .glow-strong {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+  }
+
+  /* Scrollable window bodies get a 1-bit scrollbar rather than the OS one. */
+  .crt-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
+  }
+  .crt-scroll::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .crt-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .crt-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.35);
+  }
+  .crt-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.6);
+  }
+
+  /* Dithered wallpaper: keep the 1-bit pixels crisp at any size. */
+  .pixelated {
+    image-rendering: pixelated;
+  }
+
+  .sr-only-crawl {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+/* Hide the native pointer only where the custom CRT cursor replaces it. */
+.cursor-hidden,
+.cursor-hidden * {
+  cursor: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
