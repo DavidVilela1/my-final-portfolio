@@ -86,10 +86,10 @@ export const PROJECTS: Project[] = [
     status: 'PERSONAL',
     stack: ['.NET Core', 'C#', 'PostgreSQL', 'DDD', 'CQRS'],
     description: {
-      en: 'Modular monolith ERP for automotive parts distribution. C# / .NET 8, DDD, CQRS, PostgreSQL. - Personal Project :P',
-      pt: 'ERP monolítico modular para distribuição de peças automóveis. C# / .NET 8, DDD, CQRS, PostgreSQL. - Projeto pessoal :P',
+      en: 'Modular monolith ERP for automotive parts distribution. C# / .NET 8, DDD, CQRS, PostgreSQL. - Personal Project :P - The website attached to it was also made by me.',
+      pt: 'ERP monolítico modular para distribuição de peças automóveis. C# / .NET 8, DDD, CQRS, PostgreSQL. - Projeto pessoal :P - O website que acompanha também foi feito por mim.',
     },
-    links: {repo: 'https://github.com/DavidVilela1/monolith'},
+    links: {live: 'https://monolith-web-3.vercel.app/', repo: 'https://github.com/DavidVilela1/monolith'},
     featured: true,
   },
   {
