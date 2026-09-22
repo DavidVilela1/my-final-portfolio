@@ -115,7 +115,7 @@ export const PROJECTS: Project[] = [
       en: 'A simple, choice-based rpg about not getting fierd by the end of the week.',
       pt: 'Um jogo de RPG simples, baseado em escolhas, sobre não ser despedido no fim de semana.',
     },
-    links: {live:'git-merge-conflict-rpg.vercel.app', repo: 'https://github.com/DavidVilela1/git-merge-conflict-rpg'},
+    links: {live:'https://git-merge-conflict-rpg.vercel.app/', repo: 'https://github.com/DavidVilela1/git-merge-conflict-rpg'},
     featured: true,
   },
 ];
