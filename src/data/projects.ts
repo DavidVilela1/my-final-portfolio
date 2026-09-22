@@ -17,7 +17,7 @@ export type Project = {
   title: string;
   year: number;
   /** Shown in the Projects.db table. */
-  status: 'SHIPPED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL';
+  status: 'SHIPPED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN';
   stack: string[];
   description: I18nText;
   links: { live?: string; repo?: string };
@@ -103,6 +103,19 @@ export const PROJECTS: Project[] = [
       pt: 'Uma re-imaginação frontend do website respetivo ao livro "A esfera" de André Viana.',
     },
     links: {live:'https://aesfera-reinvented.vercel.app/', repo: 'https://github.com/DavidVilela1/aesfera-reinvented'},
+    featured: true,
+  },
+  {
+    slug: 'gitmerge-rpgame',
+    title: 'RPG Game - GitMerge',
+    year: 2024,
+    status: '4FUN',
+    stack: ['React.js', 'TailwindCSS', 'JavaScript', 'Vite'],
+    description: {
+      en: 'A simple, choice-based rpg about not getting fierd by the end of the week.',
+      pt: 'Um jogo de RPG simples, baseado em escolhas, sobre não ser despedido no fim de semana.',
+    },
+    links: {live:'git-merge-conflict-rpg.vercel.app', repo: 'https://github.com/DavidVilela1/git-merge-conflict-rpg'},
     featured: true,
   },
 ];
