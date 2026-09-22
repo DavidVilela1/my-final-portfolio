@@ -11,4 +11,4 @@ export const isLocale = (v: string): v is Locale => (LOCALES as readonly string[
 export type I18nText = Record<Locale, string>;
 
 export const siteUrl = (): string =>
-  (process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000').replace(/\/$/, '');
+  (process.env.NEXT_PUBLIC_SITE_URL || 'https://davidvilela-dev.vercel.app/').replace(/\/$/, '');
