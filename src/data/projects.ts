@@ -17,7 +17,7 @@ export type Project = {
   title: string;
   year: number;
   /** Shown in the Projects.db table. */
-  status: 'SHIPPED' | 'ACTIVE' | 'ARCHIVED';
+  status: 'SHIPPED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL';
   stack: string[];
   description: I18nText;
   links: { live?: string; repo?: string };
@@ -28,94 +28,68 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    slug: 'atlas-console',
-    title: 'Atlas Console',
+    slug: 'coutoserrao-website',
+    title: 'Couto & Serrão Website',
+    year: 2026,
+    status: 'ON GOING',
+    stack: ['React.js', 'Node.js', 'SQLite', 'TailwindCSS', 'GSAP', 'TypeScript'],
+    description: {
+      en: 'A construction company website in Portuguese and English, with smooth scrolling, page transitions and testimonials as stacked cards, backed by a back office where the company manages its portfolio, journal, testimonials and quote requests in both languages.',
+      pt: 'Um website de uma empresa de construção em português e inglês, com navegação suave, transições entre páginas e testemunhos apresentados em cartões empilhados, apoiado por um back office onde a empresa pode gerir o seu portefólio, artigos, testemunhos e pedidos de orçamento em ambos os idiomas.',
+    },
+    links: { live: '', repo: 'https://github.com/DavidVilela1/couto-serrao-ofc' },
+    featured: true,
+  },
+  {
+    slug: 'monolith-digital',
+    title: 'Monolith Digital',
     year: 2026,
     status: 'SHIPPED',
-    stack: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind'],
+    stack: ['React.js', 'Node.js', 'Express', 'Prisma', 'TailwindCSS', 'TypeScript', 'GSAP', 'Three.js'],
     description: {
-      en: 'An operations dashboard for a logistics team that had been running on spreadsheets. I mapped the existing workflow in FigJam, designed the interface in Figma, then built it: server-rendered pages, a typed API layer and role-based access. The hard part was not the data, it was reducing twelve columns of noise to the four numbers anyone actually acted on.',
-      pt: 'Um painel de operações para uma equipa de logística que trabalhava em folhas de cálculo. Mapeei o fluxo existente no FigJam, desenhei a interface no Figma e depois construí tudo: páginas renderizadas no servidor, uma camada de API tipada e acessos por função. O difícil não foram os dados, foi reduzir doze colunas de ruído aos quatro números sobre os quais alguém agia de facto.',
+      en: 'A studio website in Portuguese and English, with a 3D hero and fluid page transitions, backed by a custom back office where the team publishes projects and articles in both languages without touching code.',
+      pt: 'Um site de um estúdio em português e inglês, com uma página inicial 3D e transições fluidas entre páginas, apoiado por uma área de gestão personalizada onde a equipa pode publicar projetos e artigos em ambos os idiomas, sem precisar de escrever uma única linha de código.',
     },
-    links: { live: 'https://example.com', repo: 'https://github.com/DavidVilela1' },
+    links: { live: 'https://monolith-demo.onrender.com/', repo: 'https://github.com/DavidVilela1/monolith-marketing-digital' },
     featured: true,
   },
   {
-    slug: 'meridian-store',
-    title: 'Meridian Store',
-    year: 2025,
-    status: 'SHIPPED',
-    stack: ['React', 'Node.js', 'Express', 'Redis'],
-    description: {
-      en: 'Storefront and checkout for a small independent brand. Catalogue served from a cached read model so browsing stays instant under load, with the cart held server-side to survive a lost connection. Designed mobile-first, because that is where almost every order came from.',
-      pt: 'Loja e checkout para uma marca independente. Catálogo servido a partir de um modelo de leitura em cache para navegar sempre rápido sob carga, com o carrinho guardado no servidor para sobreviver a uma ligação perdida. Desenhado primeiro para telemóvel, porque era de lá que vinha quase toda a encomenda.',
-    },
-    links: { live: 'https://example.com' },
-    featured: true,
-  },
-  {
-    slug: 'nortada-ds',
-    title: 'Nortada Design System',
-    year: 2025,
-    status: 'ACTIVE',
-    stack: ['Figma', 'React', 'TypeScript', 'Tailwind'],
-    description: {
-      en: 'A component library and the Figma library that matches it, one-to-one, for a team of four shipping three products. Tokens first, then primitives, then patterns. Written so a designer can read the code and a developer can read the file — that overlap is the whole point of the work.',
-      pt: 'Uma biblioteca de componentes e a biblioteca Figma correspondente, uma para uma, para uma equipa de quatro pessoas com três produtos. Primeiro os tokens, depois os primitivos, depois os padrões. Escrito para que um designer consiga ler o código e um programador consiga ler o ficheiro — essa sobreposição é o objetivo do trabalho.',
-    },
-    links: { repo: 'https://github.com/DavidVilela1' },
-    featured: true,
-  },
-  {
-    slug: 'corvo-api',
-    title: 'Corvo API',
-    year: 2024,
-    status: 'SHIPPED',
-    stack: ['Node.js', 'GraphQL', 'PostgreSQL', 'Docker'],
-    description: {
-      en: 'A GraphQL layer placed in front of three legacy REST services so the clients could stop knowing about any of them. Schema-first, persisted queries, and a dataloader pass that cut the request count on the busiest screen from thirty-one to four.',
-      pt: 'Uma camada GraphQL colocada à frente de três serviços REST antigos para que os clientes deixassem de precisar de os conhecer. Schema primeiro, queries persistidas e uma passagem de dataloader que reduziu os pedidos do ecrã mais movimentado de trinta e um para quatro.',
-    },
-    links: { repo: 'https://github.com/DavidVilela1' },
-    featured: true,
-  },
-  {
-    slug: 'campo-booking',
-    title: 'Campo Booking',
-    year: 2024,
-    status: 'ARCHIVED',
-    stack: ['Vue', 'Node.js', 'PostgreSQL'],
-    description: {
-      en: 'A booking flow for a rural tourism operator, built in a fortnight to replace a phone-and-notebook system.',
-      pt: 'Um fluxo de reservas para um operador de turismo rural, feito em duas semanas para substituir um sistema de telefone e caderno.',
-    },
-    links: {},
-    featured: false,
-  },
-  {
-    slug: 'rota-maps',
-    title: 'Rota',
-    year: 2023,
-    status: 'ARCHIVED',
-    stack: ['Angular', 'TypeScript', 'REST'],
-    description: {
-      en: 'A route-planning tool for a delivery fleet. First professional project, and the one that taught me to ask about the workflow before opening an editor.',
-      pt: 'Uma ferramenta de planeamento de rotas para uma frota de entregas. Primeiro projeto profissional e o que me ensinou a perguntar pelo fluxo de trabalho antes de abrir um editor.',
-    },
-    links: {},
-    featured: false,
-  },
-  {
-    slug: 'this-site',
-    title: 'davidvilela.dev',
+    slug: 'this-portfolio',
+    title: 'This Portfolio',
     year: 2026,
     status: 'ACTIVE',
-    stack: ['Next.js', 'TypeScript', 'Framer Motion', 'Tailwind'],
+    stack: ['Next.js', 'React.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
     description: {
-      en: 'This portfolio. A desktop environment rendered in two colours, with every section as a window you can drag, stack and close. No cookies, no tracking, no backend.',
-      pt: 'Este portefólio. Um ambiente de trabalho desenhado a duas cores, com cada secção numa janela que se pode arrastar, empilhar e fechar. Sem cookies, sem rastreio, sem backend.',
+      en: 'A portfolio rendered as a black-and-white desktop environment. Boot sequence, a file-tree navigator, draggable windows, a CRT layer, English and European Portuguese, no cookies, no analytics, no backend.',
+      pt: 'Um portefólio apresentado como um ambiente de trabalho a preto e branco. Sequência de arranque, navegador em árvore de ficheiros, janelas arrastáveis, camada CRT, em inglês e português europeu, sem cookies, sem analytics e sem back-end.',
     },
-    links: { repo: 'https://github.com/DavidVilela1' },
+    links: { repo: 'https://github.com/DavidVilela1/my-final-portfolio' },
+    featured: true,
+  },
+  {
+    slug: 'onlinecampus-pdacademia',
+    title: 'OnlineCampus PDAcademia',
+    year: 2025,
+    status: 'ON GOING',
+    stack: ['Next.js', 'React.js', 'TailwindCSS', 'PostgreSQL', 'Supabase', 'TypeScript'],
+    description: {
+      en: 'An online campus where the academy and partner training entities publish professional courses, students enroll, watch lessons and track progress, and earn verifiable completion certificates — all on an authentication and security foundation built entirely from scratch.',
+      pt: 'Um campus online onde a academia e entidades formadoras parceiras publicam formações profissionais, os alunos se inscrevem, veem as aulas e acompanham o progresso, e recebem certificados de conclusão verificáveis — tudo sobre uma base de autenticação e segurança construída de raiz.',
+    },
+    links: {},
+    featured: true,
+  },
+  {
+    slug: 'monolith-erp',
+    title: 'Monolith ERP',
+    year: 2026,
+    status: 'PERSONAL',
+    stack: ['.NET Core', 'C#', 'PostgreSQL', 'DDD', 'CQRS'],
+    description: {
+      en: 'Modular monolith ERP for automotive parts distribution. C# / .NET 8, DDD, CQRS, PostgreSQL. - Personal Project :P',
+      pt: 'ERP monolítico modular para distribuição de peças automóveis. C# / .NET 8, DDD, CQRS, PostgreSQL. - Projeto pessoal :P',
+    },
+    links: {repo: 'https://github.com/DavidVilela1/monolith'},
     featured: false,
   },
 ];
