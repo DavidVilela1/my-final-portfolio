@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
       pt: 'ERP monolítico modular para distribuição de peças automóveis. C# / .NET 8, DDD, CQRS, PostgreSQL. - Projeto pessoal :P',
     },
     links: {repo: 'https://github.com/DavidVilela1/monolith'},
-    featured: false,
+    featured: true,
   },
 ];
 
