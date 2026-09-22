@@ -92,6 +92,19 @@ export const PROJECTS: Project[] = [
     links: {repo: 'https://github.com/DavidVilela1/monolith'},
     featured: true,
   },
+  {
+    slug: 'aesfera-reinvented',
+    title: '"A Esfera" Reinvented',
+    year: 2026,
+    status: 'PERSONAL',
+    stack: ['Next.js', 'React.js', 'TailwindCSS', 'TypeScript', 'GSAP', 'Three.js'],
+    description: {
+      en: 'A frontend re-imagination of the website for the book "A esfera" by André Viana.',
+      pt: 'Uma re-imaginação frontend do website respetivo ao livro "A esfera" de André Viana.',
+    },
+    links: {live:'https://aesfera-reinvented.vercel.app/', repo: 'https://github.com/DavidVilela1/aesfera-reinvented'},
+    featured: true,
+  },
 ];
 
 export const featuredProjects = (): Project[] => PROJECTS.filter((p) => p.featured);
