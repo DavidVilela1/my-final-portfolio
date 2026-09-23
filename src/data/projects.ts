@@ -28,19 +28,6 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
-    slug: 'coutoserrao-website',
-    title: 'Couto & Serrão Website',
-    year: 2026,
-    status: 'ON GOING',
-    stack: ['React.js', 'Node.js', 'SQLite', 'TailwindCSS', 'GSAP', 'TypeScript'],
-    description: {
-      en: 'A construction company website in Portuguese and English, with smooth scrolling, page transitions and testimonials as stacked cards, backed by a back office where the company manages its portfolio, journal, testimonials and quote requests in both languages.',
-      pt: 'Um website de uma empresa de construção em português e inglês, com navegação suave, transições entre páginas e testemunhos apresentados em cartões empilhados, apoiado por um back office onde a empresa pode gerir o seu portefólio, artigos, testemunhos e pedidos de orçamento em ambos os idiomas.',
-    },
-    links: { live: '', repo: 'https://github.com/DavidVilela1/couto-serrao-ofc' },
-    featured: true,
-  },
-  {
     slug: 'monolith-digital',
     title: 'Monolith Digital',
     year: 2026,
