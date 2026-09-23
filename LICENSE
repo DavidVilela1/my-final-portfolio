@@ -1,0 +1,67 @@
+SOURCE-AVAILABLE LICENCE — FOR EXPOSITION ONLY
+
+Copyright (c) 2026 David Vilela. All rights reserved.
+
+This repository is published so that its source code may be read, reviewed and
+evaluated — for example by a prospective employer or client. It is NOT open
+source. No licence to use, copy, modify or distribute the code is granted,
+whether express or implied, except as narrowly stated below.
+
+
+1. PERMITTED
+
+   a. Viewing, reading and studying the source code.
+   b. Cloning or forking the repository for the sole purpose of reading or
+      running it locally to evaluate the author's work.
+   c. Quoting short excerpts in a review, article, or educational commentary,
+      with attribution to David Vilela and a link to this repository.
+
+
+2. NOT PERMITTED without prior written permission from the copyright holder
+
+   a. Using the code, in whole or in part, in any other project, product or
+      service, whether commercial, non-commercial, personal or educational.
+   b. Copying, modifying, merging, publishing, distributing, sublicensing or
+      selling copies of the code.
+   c. Deploying this site, or any work derived from it, to any publicly or
+      privately accessible location.
+   d. Reusing the visual design, layout, interaction patterns, written copy or
+      structure, whether by copying the code or by reimplementing it.
+   e. Removing, altering or obscuring this licence or the copyright notice.
+   f. Using this repository, or any part of it, as training data for machine
+      learning models or other automated systems.
+
+
+3. PERSONAL CONTENT
+
+   Photographs, biographical text, project descriptions, and the name and
+   likeness of David Vilela are personal content rather than software. They are
+   not licensed for any use under any circumstances, including uses otherwise
+   permitted by section 1.
+
+
+4. THIRD-PARTY MATERIAL
+
+   This licence covers only material authored by the copyright holder.
+
+   a. IBM Plex Mono, in src/fonts/, is licensed under the SIL Open Font
+      License 1.1. See src/fonts/LICENSE.txt. That licence governs the font
+      files and is unaffected by this one.
+   b. Dependencies installed from npm are not included in this repository and
+      remain subject to their own licences.
+
+
+5. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+   WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+6. PERMISSION REQUESTS
+
+   Requests for any use beyond section 1 are welcome and are often granted.
+   Write to vileladavid112@gmail.com.

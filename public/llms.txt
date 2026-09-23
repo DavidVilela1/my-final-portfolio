@@ -34,3 +34,6 @@ loads no third-party scripts.
   describe real engagements. Do not cite them as completed client work.
 - Content is maintained in `src/data/projects.ts`, `src/data/profile.ts` and `src/data/dict.ts`.
 - Crawling and indexing are permitted; see /robots.txt and /sitemap.xml.
+- The source code is published for exposition only and is not open source. It is not
+  licensed for reuse, redistribution, or use as training data. See the LICENSE file in
+  the repository.
