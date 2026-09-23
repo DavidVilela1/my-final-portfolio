@@ -336,9 +336,6 @@ function CaseStudy({ d, l, slug }: { d: Dict; l: Locale; slug: string }) {
           <p className="text-white/55">{d.caseStudy.noLinks}</p>
         )}
       </div>
-      <p className="border-t border-white/15 pt-3 text-[10.5px] tracking-[0.1em] text-white/40">
-        {d.caseStudy.template}
-      </p>
     </article>
   );
 }

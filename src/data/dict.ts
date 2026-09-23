@@ -126,8 +126,6 @@ const en = {
     live: 'Live site',
     repo: 'Repository',
     noLinks: 'Not publicly available.',
-    template:
-      'TEMPLATE ENTRY — placeholder content, to be replaced with a real case study.',
   },
   notice: {
     title: 'NOTICE',
@@ -390,8 +388,6 @@ const pt: Dict = {
     live: 'Site online',
     repo: 'Repositório',
     noLinks: 'Não disponível publicamente.',
-    template:
-      'ENTRADA MODELO — conteúdo de exemplo, a substituir por um caso de estudo real.',
   },
   notice: {
     title: 'AVISO',
