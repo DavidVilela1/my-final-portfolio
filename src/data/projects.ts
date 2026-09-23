@@ -17,7 +17,7 @@ export type Project = {
   title: string;
   year: number;
   /** Shown in the Projects.db table. */
-  status: 'SHIPPED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN';
+  status: 'COMPLETED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN';
   stack: string[];
   description: I18nText;
   links: { live?: string; repo?: string };
@@ -44,7 +44,7 @@ export const PROJECTS: Project[] = [
     slug: 'monolith-digital',
     title: 'Monolith Digital',
     year: 2026,
-    status: 'SHIPPED',
+    status: 'COMPLETED',
     stack: ['React.js', 'Node.js', 'Express', 'Prisma', 'TailwindCSS', 'TypeScript', 'GSAP', 'Three.js'],
     description: {
       en: 'A studio website in Portuguese and English, with a 3D hero and fluid page transitions, backed by a custom back office where the team publishes projects and articles in both languages without touching code.',
@@ -67,16 +67,16 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    slug: 'onlinecampus-pdacademia',
-    title: 'OnlineCampus PDAcademia',
-    year: 2025,
-    status: 'ON GOING',
-    stack: ['Next.js', 'React.js', 'TailwindCSS', 'PostgreSQL', 'Supabase', 'TypeScript'],
+    slug: 'tsblueprint',
+    title: 'TSBlueprint',
+    year: 2026,
+    status: 'COMPLETED',
+    stack: ['TypeScript', 'VS Code Extension API', 'TypeScript Compiler API', 'esbuild', 'Vitest'],
     description: {
-      en: 'An online campus where the academy and partner training entities publish professional courses, students enroll, watch lessons and track progress, and earn verifiable completion certificates — all on an authentication and security foundation built entirely from scratch.',
-      pt: 'Um campus online onde a academia e entidades formadoras parceiras publicam formações profissionais, os alunos se inscrevem, veem as aulas e acompanham o progresso, e recebem certificados de conclusão verificáveis — tudo sobre uma base de autenticação e segurança construída de raiz.',
+      en: 'A VS Code extension that reads the TypeScript file you are editing and turns its interfaces and types into an interactive diagram that updates as you type — parsed locally with the TypeScript compiler, with typed messaging between the editor and a locked-down panel, and no data ever leaving the machine.',
+      pt: 'Uma extensão para o VS Code que lê o ficheiro TypeScript que está a ser editado e transforma as suas interfaces e tipos num diagrama interativo que se atualiza enquanto se escreve — analisado localmente com o compilador do TypeScript, com comunicação tipada entre o editor e um painel isolado, e sem que nenhum dado saia da máquina.',
     },
-    links: {},
+    links: {repo: 'https://github.com/DavidVilela1/ts-blueprint'},
     featured: true,
   },
   {
@@ -89,20 +89,20 @@ export const PROJECTS: Project[] = [
       en: 'Modular monolith ERP for automotive parts distribution. C# / .NET 8, DDD, CQRS, PostgreSQL. - Personal Project :P - The website attached to it was also made by me.',
       pt: 'ERP monolítico modular para distribuição de peças automóveis. C# / .NET 8, DDD, CQRS, PostgreSQL. - Projeto pessoal :P - O website que acompanha também foi feito por mim.',
     },
-    links: {live: 'https://monolith-web-3.vercel.app/', repo: 'https://github.com/DavidVilela1/monolith'},
+    links: {repo: 'https://github.com/DavidVilela1/monolith'},
     featured: true,
   },
   {
-    slug: 'aesfera-reinvented',
-    title: '"A Esfera" Reinvented',
+    slug: 'ctx-pack',
+    title: 'ctx-pack',
     year: 2026,
-    status: 'PERSONAL',
-    stack: ['Next.js', 'React.js', 'TailwindCSS', 'TypeScript', 'GSAP', 'Three.js'],
+    status: 'COMPLETED',
+    stack: ['TypeScript', 'Node.js', 'Commander.js', 'simple-git', 'js-tiktoken', 'tsup'],
     description: {
-      en: 'A frontend re-imagination of the website for the book "A esfera" by André Viana.',
-      pt: 'Uma re-imaginação frontend do website respetivo ao livro "A esfera" de André Viana.',
+      en: 'An open-source CLI that packs the files you are working on (via git diff) into a single token-counted Markdown or JSON prompt, with the project tree and architecture rules, and copies it to the clipboard for any AI chat.',
+      pt: 'Uma CLI open-source que agrupa os ficheiros em que estás a trabalhar (via git diff) num único prompt em Markdown ou JSON, com contagem de tokens, a árvore do projeto e as regras de arquitetura, e copia-o para a área de transferência, pronto para qualquer chat de IA.',
     },
-    links: {live:'https://aesfera-reinvented.vercel.app/', repo: 'https://github.com/DavidVilela1/aesfera-reinvented'},
+    links: { repo: 'https://github.com/DavidVilela1/ctx-pack' },
     featured: true,
   },
   {
