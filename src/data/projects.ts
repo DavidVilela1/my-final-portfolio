@@ -63,7 +63,7 @@ export const PROJECTS: Project[] = [
       en: 'A VS Code extension that reads the TypeScript file you are editing and turns its interfaces and types into an interactive diagram that updates as you type — parsed locally with the TypeScript compiler, with typed messaging between the editor and a locked-down panel, and no data ever leaving the machine.',
       pt: 'Uma extensão para o VS Code que lê o ficheiro TypeScript que está a ser editado e transforma as suas interfaces e tipos num diagrama interativo que se atualiza enquanto se escreve — analisado localmente com o compilador do TypeScript, com comunicação tipada entre o editor e um painel isolado, e sem que nenhum dado saia da máquina.',
     },
-    links: {repo: 'https://github.com/DavidVilela1/ts-blueprint'},
+    links: {live: 'https://marketplace.visualstudio.com/items?itemName=davidtools.ts-blueprint', repo: 'https://github.com/DavidVilela1/ts-blueprint'},
     featured: true,
   },
   {
