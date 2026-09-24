@@ -17,7 +17,7 @@ export type Project = {
   title: string;
   year: number;
   /** Shown in the Projects.db table. */
-  status: 'COMPLETED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN';
+  status: 'COMPLETED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN' | 'DEMO';
   stack: string[];
   description: I18nText;
   links: { live?: string; repo?: string };
@@ -27,6 +27,19 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
+    {
+    slug: 'syncra-realtime-kanban',
+    title: 'Syncra - Real-time Kanban',
+    year: 2026,
+    status: 'DEMO',
+    stack: ['Next.js', 'TypeScript', 'tRPC', 'PostgreSQL', 'Drizzle ORM', 'Redis', 'WebSockets', 'TailwindCSS'],
+    description: {
+      en: 'A real-time multiplayer Kanban: create a demo room in one click, share the link, and watch every card move sync live between everyone in the room.',
+      pt: 'Um Kanban multijogador em tempo real: cria uma sala de demonstração com um clique, partilha o link e vê cada cartão mover-se em direto para todos na sala.',
+    },
+    links: { live: 'https://syncra-production-acdc.up.railway.app/', repo: 'https://github.com/DavidVilela1/syncra' },
+    featured: true,
+  },
   {
     slug: 'monolith-digital',
     title: 'Monolith Digital',
@@ -90,19 +103,6 @@ export const PROJECTS: Project[] = [
       pt: 'Uma CLI open-source que agrupa os ficheiros em que estás a trabalhar (via git diff) num único prompt em Markdown ou JSON, com contagem de tokens, a árvore do projeto e as regras de arquitetura, e copia-o para a área de transferência, pronto para qualquer chat de IA.',
     },
     links: { repo: 'https://github.com/DavidVilela1/ctx-pack' },
-    featured: true,
-  },
-  {
-    slug: 'gitmerge-rpgame',
-    title: 'RPG Game - GitMerge',
-    year: 2024,
-    status: '4FUN',
-    stack: ['React.js', 'TailwindCSS', 'JavaScript', 'Vite'],
-    description: {
-      en: 'A simple, choice-based rpg about not getting fierd by the end of the week.',
-      pt: 'Um jogo de RPG simples, baseado em escolhas, sobre não ser despedido no fim de semana.',
-    },
-    links: {live:'https://git-merge-conflict-rpg.vercel.app/', repo: 'https://github.com/DavidVilela1/git-merge-conflict-rpg'},
     featured: true,
   },
 ];
