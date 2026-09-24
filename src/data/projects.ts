@@ -1,16 +1,5 @@
 import type { I18nText } from '@/lib/i18n';
 
-/**
- * ─────────────────────────────────────────────────────────────────────────────
- * THE ONLY FILE YOU NEED TO EDIT TO PUBLISH A PROJECT.
- *
- * `featured: true` puts the project in the case-studies/ folder of the nav tree.
- * Every project (featured or not) is listed in Projects.db.
- *
- * All four entries below are TEMPLATES with invented content — replace the text
- * with your own. Keep the shape and the site keeps working.
- * ─────────────────────────────────────────────────────────────────────────────
- */
 export type Project = {
   /** URL-safe id. Also the file name shown in the nav tree: `${slug}.md` */
   slug: string;
