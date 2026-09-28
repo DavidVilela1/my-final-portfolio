@@ -6,7 +6,7 @@ export type Project = {
   title: string;
   year: number;
   /** Shown in the Projects.db table. */
-  status: 'COMPLETED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN' | 'DEMO';
+  status: 'COMPLETED' | 'ACTIVE' | 'ARCHIVED' | 'ON GOING' | 'PERSONAL' | '4FUN' | 'DEMO' | 'WIP';
   stack: string[];
   description: I18nText;
   links: { live?: string; repo?: string };
@@ -16,6 +16,19 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
+    {
+      slug: 'hound-network-monitor',
+      title: 'Hound - Home Network Monitor',
+      year: 2026,
+      status: 'WIP',
+      stack: ['Python', 'FastAPI', 'Scapy', 'SQLite', 'SQLAlchemy', 'Pydantic', 'NiceGUI', 'WebSockets'],
+      description: {
+        en: 'A local home-network security monitor: it captures DNS lookups and connection attempts, scores each one with transparent, explainable risk signals and streams them to a live dashboard. Only the small capture process needs admin rights.',
+        pt: 'Um monitor de segurança para a rede doméstica que corre localmente: captura pedidos DNS e tentativas de ligação, avalia cada um com sinais de risco transparentes e explicáveis e mostra-os num painel em direto. Só o pequeno processo de captura precisa de privilégios de administrador.',
+      },
+      links: { repo: 'https://github.com/DavidVilela1/hound' },
+      featured: true,
+    },
     {
     slug: 'syncra-realtime-kanban',
     title: 'Syncra - Real-time Kanban',
@@ -40,7 +53,7 @@ export const PROJECTS: Project[] = [
       pt: 'Um site de um estúdio em português e inglês, com uma página inicial 3D e transições fluidas entre páginas, apoiado por uma área de gestão personalizada onde a equipa pode publicar projetos e artigos em ambos os idiomas, sem precisar de escrever uma única linha de código.',
     },
     links: { live: 'https://monolith-demo.onrender.com/', repo: 'https://github.com/DavidVilela1/monolith-marketing-digital' },
-    featured: true,
+    featured: false,
   },
   {
     slug: 'this-portfolio',
@@ -53,7 +66,7 @@ export const PROJECTS: Project[] = [
       pt: 'Um portefólio apresentado como um ambiente de trabalho a preto e branco. Sequência de arranque, navegador em árvore de ficheiros, janelas arrastáveis, camada CRT, em inglês e português europeu, sem cookies, sem analytics e sem back-end.',
     },
     links: { repo: 'https://github.com/DavidVilela1/my-final-portfolio' },
-    featured: true,
+    featured: false,
   },
   {
     slug: 'tsblueprint',
