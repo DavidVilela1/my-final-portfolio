@@ -30,6 +30,19 @@ export const PROJECTS: Project[] = [
       featured: true,
     },
     {
+      slug: 'purplepie-engine',
+      title: 'PurplePie - 2D Game Engine',
+      year: 2026,
+      status: 'WIP',
+      stack: ['Rust', 'wgpu', 'winit', 'hecs', 'glam' ],
+      description: {
+        en: 'A small, modular 2D game engine written in Rust: a fixed-timestep game loop, an engine-owned ECS world and a wgpu renderer behind a simple API, so game code never touches GPU or windowing internals. Built stage by stage with documented architecture decisions and CI on Linux, Windows and macOS.',
+        pt: 'Um motor de jogo 2D pequeno e modular escrito em Rust: um ciclo de jogo com passo fixo, um mundo ECS gerido pelo motor e um renderizador wgpu por trás de uma API simples, para que o código do jogo nunca toque em detalhes da GPU ou das janelas. Desenvolvido por etapas, com decisões de arquitetura documentadas e CI em Linux, Windows e macOS.',
+      },
+      links: { repo: 'https://github.com/DavidVilela1/purplepie' },
+      featured: true,
+    },
+    {
     slug: 'syncra-realtime-kanban',
     title: 'Syncra - Real-time Kanban',
     year: 2026,
