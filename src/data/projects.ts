@@ -56,32 +56,6 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
-    slug: 'monolith-digital',
-    title: 'Monolith Digital',
-    year: 2026,
-    status: 'COMPLETED',
-    stack: ['React.js', 'Node.js', 'Express', 'Prisma', 'TailwindCSS', 'TypeScript', 'GSAP', 'Three.js'],
-    description: {
-      en: 'A studio website in Portuguese and English, with a 3D hero and fluid page transitions, backed by a custom back office where the team publishes projects and articles in both languages without touching code.',
-      pt: 'Um site de um estúdio em português e inglês, com uma página inicial 3D e transições fluidas entre páginas, apoiado por uma área de gestão personalizada onde a equipa pode publicar projetos e artigos em ambos os idiomas, sem precisar de escrever uma única linha de código.',
-    },
-    links: { live: 'https://monolith-demo.onrender.com/', repo: 'https://github.com/DavidVilela1/monolith-marketing-digital' },
-    featured: false,
-  },
-  {
-    slug: 'this-portfolio',
-    title: 'This Portfolio',
-    year: 2026,
-    status: 'ACTIVE',
-    stack: ['Next.js', 'React.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
-    description: {
-      en: 'A portfolio rendered as a black-and-white desktop environment. Boot sequence, a file-tree navigator, draggable windows, a CRT layer, English and European Portuguese, no cookies, no analytics, no backend.',
-      pt: 'Um portefólio apresentado como um ambiente de trabalho a preto e branco. Sequência de arranque, navegador em árvore de ficheiros, janelas arrastáveis, camada CRT, em inglês e português europeu, sem cookies, sem analytics e sem back-end.',
-    },
-    links: { repo: 'https://github.com/DavidVilela1/my-final-portfolio' },
-    featured: false,
-  },
-  {
     slug: 'tsblueprint',
     title: 'TSBlueprint',
     year: 2026,
@@ -92,19 +66,6 @@ export const PROJECTS: Project[] = [
       pt: 'Uma extensão para o VS Code que lê o ficheiro TypeScript que está a ser editado e transforma as suas interfaces e tipos num diagrama interativo que se atualiza enquanto se escreve — analisado localmente com o compilador do TypeScript, com comunicação tipada entre o editor e um painel isolado, e sem que nenhum dado saia da máquina.',
     },
     links: {live: 'https://marketplace.visualstudio.com/items?itemName=davidtools.ts-blueprint', repo: 'https://github.com/DavidVilela1/ts-blueprint'},
-    featured: true,
-  },
-  {
-    slug: 'monolith-erp',
-    title: 'Monolith ERP',
-    year: 2026,
-    status: 'PERSONAL',
-    stack: ['.NET Core', 'C#', 'PostgreSQL', 'DDD', 'CQRS'],
-    description: {
-      en: 'Modular monolith ERP for automotive parts distribution. C# / .NET 8, DDD, CQRS, PostgreSQL. - Personal Project :P - The website attached to it was also made by me.',
-      pt: 'ERP monolítico modular para distribuição de peças automóveis. C# / .NET 8, DDD, CQRS, PostgreSQL. - Projeto pessoal :P - O website que acompanha também foi feito por mim.',
-    },
-    links: {repo: 'https://github.com/DavidVilela1/monolith'},
     featured: true,
   },
   {

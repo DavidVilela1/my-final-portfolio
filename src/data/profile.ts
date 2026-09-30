@@ -6,8 +6,8 @@ export const PROFILE = {
   email: 'vileladavid112@gmail.com',
   github: 'https://github.com/DavidVilela1',
   linkedin: 'https://www.linkedin.com/in/davidvilelawebdev/',
-  startedCoding: 2016,
-  startedWorking: 2023,
+  startedCoding: 2018,
+  startedWorking: 2024,
 } as const;
 
 /** 0–4. Drives the shaded square grid in the About window. */
@@ -27,8 +27,9 @@ export const SKILLS: SkillGroup[] = [
       { name: 'Next.js', level: 4 },
       { name: 'React', level: 4 },
       { name: 'Tailwind CSS', level: 4 },
-      { name: 'Vue', level: 2 },
-      { name: 'Angular', level: 2 },
+      { name: 'Vue', level: 3 },
+      { name: 'Angular', level: 3 },
+      { name: 'ASP.NET', level: 2 },
     ],
   },
   {
@@ -39,6 +40,7 @@ export const SKILLS: SkillGroup[] = [
       { name: 'Express', level: 3 },
       { name: 'PostgreSQL', level: 3 },
       { name: '.NET', level: 2 },
+      { name: 'Entity Framework', level: 2 },
     ],
   },
   {
@@ -48,6 +50,8 @@ export const SKILLS: SkillGroup[] = [
       { name: 'TypeScript', level: 4 },
       { name: 'JavaScript', level: 4 },
       { name: 'SQL', level: 3 },
+      { name: 'Python', level: 3 },
+      { name: 'Rust', level: 2 },
       { name: 'C#', level: 2 },
     ],
   },
@@ -83,22 +87,23 @@ export const TOOLS: string[] = [
   'Azure',
   'Redis Cloud',
   'Railway PostgreSQL',
+  'Kubernetes',
 ];
 
 export type LogEntry = { period: string; title: I18nText; lines: I18nText[] };
 
 export const EXPERIENCE: LogEntry[] = [
   {
-    period: '2023 — ' + new Date().getFullYear(),
-    title: { en: 'Web development, professionally', pt: 'Desenvolvimento web, profissionalmente' },
+    period: '2024 — ' + new Date().getFullYear(),
+    title: { en: 'Software & web development, professionally', pt: 'Desenvolvimento web e de software, profissionalmente' },
     lines: [
       {
-        en: 'Building and shipping web products end to end: interface design, frontend, API layer and the database underneath it.',
-        pt: 'Construir e lançar produtos web de ponta a ponta: design de interface, frontend, camada de API e a base de dados por baixo.',
+        en: 'Building and shipping digital products end to end: interface design, frontend, API layer, the database underneath it and deployment.',
+        pt: 'Construir e lançar produtos web de ponta a ponta: design de interface, frontend, camada de API, a base de dados por baixo e o deployment.',
       },
       {
-        en: 'TypeScript throughout — Next.js and React on the front, Node.js and PostgreSQL on the back.',
-        pt: 'TypeScript de ponta a ponta — Next.js e React à frente, Node.js e PostgreSQL atrás.',
+        en: 'Specialist in — TypeScript from end to end — Next.js and React in front, Node.js and PostgreSQL behind.',
+        pt: 'Especialista em — TypeScript de ponta a ponta — Next.js e React à frente, Node.js e PostgreSQL atrás.',
       },
       {
         en: 'Design and implementation by the same pair of hands, which keeps the gap between the Figma file and the build close to zero.',
@@ -107,7 +112,7 @@ export const EXPERIENCE: LogEntry[] = [
     ],
   },
   {
-    period: '2016 — 2023',
+    period: '2018 — 2024',
     title: { en: 'Self-taught, then formally', pt: 'Autodidata, depois formalmente' },
     lines: [
       {

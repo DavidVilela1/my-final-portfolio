@@ -70,8 +70,9 @@ const en = {
     gridLegendHigh: 'More',
     body: [
       'Twenty-three, from Vila Real. I write TypeScript for a living and design the interfaces it ends up behind.',
-      'I have been coding since I was thirteen and working in development since 2023. Portuguese and English, both fluent.',
+      'I have been coding since I was thirteen and working in development since 2024. Portuguese and English, both fluent.',
       'Most of my work sits in the seam between design and engineering: a Figma file on one screen, the build on the other, and nothing lost in between.',
+      'Now exploring new stacks on my personal projects: Python, Flutter, Rust and more.',
     ],
     contact: 'Contact',
     emailLabel: 'Email',
@@ -86,9 +87,9 @@ const en = {
     title: 'Where this comes from',
     body: [
       'I grew up in Vila Real, in the north of Portugal, far enough from anything that a laptop was the interesting thing in the room.',
-      'I started writing code at thirteen because I wanted to change something on a page and found out I was allowed to. That never really wore off — the pleasure is still in the part where a thing that did not exist an hour ago now works.',
-      'Somewhere along the way I got annoyed at my own interfaces and started learning design properly. I do not think of them as two jobs. A layout decision is an engineering decision made earlier, and an engineering decision is a layout decision you are stuck with later.',
-      'I work in TypeScript by preference and enjoy .NET more than is fashionable. I read documentation before Stack Overflow. I would rather ship something small that holds than something large that wobbles.',
+      'I started writing code at thirteen when I realized I could tell the computer what to do and it would do it.',
+      'After years of only wrinting code, I started studying design conscepts and found my way into user experience almost by default.',
+      'I work in TypeScript by preference, its my confort language, witch is way some of my projects are written in diferent languages. I like to get unconfortable.',
       'Portuguese is my first language, English is the one most of my work happens in.',
     ],
     facts: 'System facts',
@@ -101,7 +102,7 @@ const en = {
     },
     factValues: {
       languages: 'Portuguese (native), English (fluent)',
-      focus: 'Web products, end to end',
+      focus: 'Digital products, end to end',
     },
   },
   skills: {
@@ -332,8 +333,9 @@ const pt: Dict = {
     gridLegendHigh: 'Mais',
     body: [
       'Vinte e três anos, de Vila Real. Escrevo TypeScript para viver e desenho as interfaces por trás das quais ele acaba.',
-      'Programo desde os treze anos e trabalho em desenvolvimento desde 2023. Português e inglês, ambos fluentes.',
+      'Programo desde os treze anos e trabalho em desenvolvimento desde 2024. Português e inglês, Fluente em ambos.',
       'A maior parte do meu trabalho vive na costura entre design e engenharia: um ficheiro Figma num ecrã, o produto no outro, e nada perdido pelo caminho.',
+      'Atualmente a explorar novas stacks em projetos pessoais: Python, Flutter, Rust e mais.',
     ],
     contact: 'Contacto',
     emailLabel: 'Email',
@@ -348,10 +350,10 @@ const pt: Dict = {
     title: 'De onde vem isto',
     body: [
       'Cresci em Vila Real, no norte de Portugal, suficientemente longe de tudo para que um portátil fosse a coisa mais interessante da sala.',
-      'Comecei a escrever código aos treze anos porque queria mudar uma coisa numa página e descobri que podia. Isso nunca passou — o prazer continua a estar na parte em que uma coisa que não existia há uma hora passa a funcionar.',
-      'A certa altura fiquei irritado com as minhas próprias interfaces e comecei a aprender design a sério. Não penso nisto como dois trabalhos. Uma decisão de layout é uma decisão de engenharia tomada mais cedo, e uma decisão de engenharia é uma decisão de layout com que se fica preso mais tarde.',
-      'Trabalho em TypeScript por preferência e gosto de .NET mais do que é moda admitir. Leio a documentação antes do Stack Overflow. Prefiro lançar algo pequeno que aguenta a algo grande que abana.',
-      'O português é a minha primeira língua; o inglês é aquela em que acontece a maior parte do meu trabalho.',
+      'Comecei a escrever código aos treze anos porque percebi que podia dizer ao computador o que fazer e ele fazia.',
+      'Depois de anos a escrever codigo, comecei a estudar conceitos de design e apanhei-me em experiencia de usuario quase que por default.',
+      'Trabalho em TypeScript por preferência, é a minha zona de conforto. Exatamente por isso é que, nos meus projetos pessoais, tenho escrito em liguagens diferentes. Gosto de me sentir desconfortavel.',
+      'O português é a minha primeira língua; o inglês é aquela em que uso na maior parte do meu trabalho.',
     ],
     facts: 'Dados do sistema',
     factLabels: {
