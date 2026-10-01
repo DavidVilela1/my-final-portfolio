@@ -78,6 +78,7 @@ const en = {
     emailLabel: 'Email',
     githubLabel: 'GitHub',
     linkedinLabel: 'LinkedIn',
+    cvLabel: 'Download CV (PDF)',
   },
   experience: {
     intro: 'Work log. Newest first.',
@@ -341,6 +342,7 @@ const pt: Dict = {
     emailLabel: 'Email',
     githubLabel: 'GitHub',
     linkedinLabel: 'LinkedIn',
+    cvLabel: 'Descarregar CV (PDF)',
   },
   experience: {
     intro: 'Registo de trabalho. Do mais recente para o mais antigo.',

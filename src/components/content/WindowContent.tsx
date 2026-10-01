@@ -1,6 +1,6 @@
 'use client';
 
-import { External, Github, Linkedin, Mail } from '@/components/Icons';
+import { External, Github, Linkedin, Mail, Download } from '@/components/Icons';
 import type { Dict, Section } from '@/data/dict';
 import { EXPERIENCE, PROFILE, SKILLS, TOOLS, type Proficiency } from '@/data/profile';
 import { PROJECTS, projectBySlug } from '@/data/projects';
@@ -111,6 +111,12 @@ function About({ d, l }: { d: Dict; l: Locale }) {
               <Linkedin />
               {d.about.linkedinLabel}
               <External className="h-3 w-3" />
+            </a>
+          </li>
+          <li>
+            <a className={linkRow} href="/cv/david-vilela-cv.pdf" download>
+              <Download />
+              {d.about.cvLabel}
             </a>
           </li>
         </ul>

@@ -120,3 +120,10 @@ export const External = ({ className }: P) => (
     <path d="M12 9.5v4h-9.5V4H7" />
   </svg>
 );
+
+export const Download = ({ className }: P) => (
+  <svg {...svg(className)}>
+    <path d="M8 2.5v8M4.5 7 8 10.5 11.5 7" />
+    <path d="M2.5 12.5v1h11v-1" />
+  </svg>
+);
