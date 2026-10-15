@@ -79,6 +79,7 @@ const en = {
     githubLabel: 'GitHub',
     linkedinLabel: 'LinkedIn',
     cvLabel: 'Download CV (PDF)',
+    gamedevLabel: 'Game Dev Interactive Portfolio',
   },
   experience: {
     intro: 'Work log. Newest first.',
@@ -343,6 +344,7 @@ const pt: Dict = {
     githubLabel: 'GitHub',
     linkedinLabel: 'LinkedIn',
     cvLabel: 'Descarregar CV (PDF)',
+    gamedevLabel: 'Portfolio Interativo Game Dev',
   },
   experience: {
     intro: 'Registo de trabalho. Do mais recente para o mais antigo.',

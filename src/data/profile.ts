@@ -6,6 +6,7 @@ export const PROFILE = {
   email: 'vileladavid112@gmail.com',
   github: 'https://github.com/DavidVilela1',
   linkedin: 'https://www.linkedin.com/in/davidvilelawebdev/',
+  gamedev: 'https://davids-arcade-nu.vercel.app/',
   startedCoding: 2018,
   startedWorking: 2024,
 } as const;

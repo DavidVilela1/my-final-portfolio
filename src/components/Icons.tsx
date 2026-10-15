@@ -114,6 +114,14 @@ export const Info = ({ className }: P) => (
   </svg>
 );
 
+export const Gamepad = ({ className }: P) => (
+  <svg {...svg(className)}>
+    <path d="M5 4.5h6a3 3 0 0 1 2.9 2.3l.8 3.6a1.5 1.5 0 0 1-2.5 1.4L10.5 10.5h-5l-1.7 1.3a1.5 1.5 0 0 1-2.5-1.4l.8-3.6A3 3 0 0 1 5 4.5Z" />
+    <path d="M5 6.3v2.4M3.8 7.5h2.4" />
+    <path d="M10.6 6.7v.1M12 8.1v.1" />
+  </svg>
+);
+
 export const External = ({ className }: P) => (
   <svg {...svg(className)}>
     <path d="M9.5 2.5h4v4M13.5 2.5 7 9" />
